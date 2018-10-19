@@ -1,0 +1,4 @@
+* In each .cpp file, certain input text files are requied. Please make sure to have those files in desired directories to run C++ codes. Please note that some of the text files are produced by C# however, by knowing the inputs, user can make the .txt files and name them appropriately.
+
+
+* There is a folder "Expected txt files" which contains all expected text files that might be needed in cpp source files. 

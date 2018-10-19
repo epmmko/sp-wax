@@ -1,0 +1,13 @@
+* To run SP-Wax, please go to folder "Exe files (SP-Wax run)" and click on "SP-WaxInt.exe"
+
+* For more information about each forlder (of this directory), please refer to "SP-Wax Developer's manual.pdf"
+in "Manuals" folder. 
+
+
+
+
+
+
+**If there is any help needed please conanct:
+arya.shahdi@ttu.edu
+ekarit.panacharoensawad@ttu.edu

@@ -1,0 +1,24 @@
+﻿#pragma once
+double TempFusYang(int CN);
+double HeatFusYang(int CN);
+double HeatFus(int CN);
+double HeatTrans(int CN);
+double HeatVap(double T, int CN);
+double TempFus(int CN);
+double TempTrans(int CN);
+double *ArrayRetA();
+double *ArrayRetB();
+double *ArrayRetC();
+double *ArrayRetD();
+double Vm(double T, int CN);
+double Vw(int CN);
+double LambdaCorr3(int CN1, int CN2, double T, double CF);
+double LambdaCorr1(int CN1, int CN2, double T, double CF);
+double LambdaCorr2(int CN1, int CN2, double T, double CF);
+double GammaSolid(int CN1, double X_S[], int MinC, int MaxC, double T, double CF);
+double GammaSolMes(int MinC, int CN1, int CompNum, int CarbonNum[], double X_S[], double T, double CF);
+double GammaLiqMesFFV(int MinC, int NumOfCN1, int CN1, int CompNum, int CarbonNum[], double X_L[], double T);
+double GammaLiqMesEFV(int MinC, int NumOfCN1, int CN1, int CompNum, int CarbonNum[], double X_L[], double T);
+double objFunc(double nS, int CompNum, double Z[], double K[]);
+double objFuncDer(double nS, int CompNum, double Z[], double K[]);
+double Fsolve(double nS, int CompNum, double Z[], double K[]);

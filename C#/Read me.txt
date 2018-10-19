@@ -1,0 +1,1 @@
+Please make sure to have the required .exe and .txt files in release or in debug folders to be able to run the C# course correctly. The required files can be found in "Exe files (SP-Wax run)"

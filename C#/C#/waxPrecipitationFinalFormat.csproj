@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F40A7A10-4680-4BAB-8D9F-F99403B7FAEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>waxPrecipitationFinalFormat</RootNamespace>
+    <AssemblyName>waxPrecipitationFinalFormat</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinarySolute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinarySolute.Designer.cs">
+      <DependentUpon>BinarySolute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compo.Designer.cs">
+      <DependentUpon>Compo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exp.Designer.cs">
+      <DependentUpon>Exp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpBinaryData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpBinaryData.Designer.cs">
+      <DependentUpon>ExpBinaryData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authos.Designer.cs">
+      <DependentUpon>Authos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiComp.Designer.cs">
+      <DependentUpon>MultiComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FirstPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPage.Designer.cs">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoluteFractionValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoluteFractionValues.Designer.cs">
+      <DependentUpon>SoluteFractionValues.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BinarySolute.resx">
+      <DependentUpon>BinarySolute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compo.resx">
+      <DependentUpon>Compo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exp.resx">
+      <DependentUpon>Exp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpBinaryData.resx">
+      <DependentUpon>ExpBinaryData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPage.resx">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authos.resx">
+      <DependentUpon>Authos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiComp.resx">
+      <DependentUpon>MultiComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SoluteFractionValues.resx">
+      <DependentUpon>SoluteFractionValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data.txt" />
+    <Content Include="DIPP.txt" />
+    <Content Include="GeneralInputs.txt" />
+    <Content Include="KInput.txt" />
+    <Content Include="K_values.txt" />
+    <Content Include="PrecipitatationCurveWAT.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
