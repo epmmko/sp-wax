@@ -1,1 +1,2 @@
 Note: SP-Wax Results.xlsx was updated on 11/14/2018 to use the estimated relative error to quantify the model performance
+NOe2: SP-Wax Results.xlsx was updated again on 12/14/2018 to add additional model comparison into it.
